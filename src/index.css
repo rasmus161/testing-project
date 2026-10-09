@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+/* use this instead of (import tailwindcss ?? ) !!!For future me 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*/
+
+/*this is a class  for finding layout bugs
+
+* {
+  box-sizing: border-box;
+  outline: 1px solid red !important;
+  background: rgb(100 0 0 / 0.12) !important;
+}
+
+ */
+
+@layer components {
+  /* main styles */
+  html {
+    @apply bg-gray-300;
+  }
+}
