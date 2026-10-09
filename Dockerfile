@@ -13,6 +13,6 @@ FROM nginx:alpine
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 COPY --from=build /app/dist /usr/share/nginx/html
 
-EXPOSE 10000
+EXPOSE 10001
 
 CMD ["sh", "-c", "sed -i \"s/listen 10000/listen ${PORT:-10000}/\" /etc/nginx/conf.d/default.conf && nginx -g 'daemon off;'"]
